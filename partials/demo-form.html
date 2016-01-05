@@ -1,0 +1,22 @@
+<div class="ui raised segment">
+	<h2 class="ui header">Demo Form with Form Builder</h2>
+
+	<form class="ui form" 
+		[ngFormModel]="myForm"
+		(ngSubmit)="onSubmit(myForm.value)">
+
+			<div class="field">
+				<label for="skuInput">SKU</label>
+				<input type="text" id="skuInput" placeholder="SKU"
+				[ngFormControl]="myForm.controls['sku']">
+			</div>
+
+			<button type="submit" class="ui button">Submit</button>
+
+	</form>
+
+</div>
+
+<!-- 
+#f = Local Variable for this View
+ -->
